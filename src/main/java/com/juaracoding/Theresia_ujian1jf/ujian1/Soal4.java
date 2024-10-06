@@ -5,31 +5,25 @@ import java.util.Scanner;
 
 public class Soal4 {
  public static void main(String[] args) {
-/*
 
+     // Declarition Nama film ke dalam Array
+     String filmArray[] = new String[6];
+     filmArray[1] = "Avenger: Endgame";
+     filmArray[2] = "Spider-Man: Homecoming";
+     filmArray[3] = "Black Panther";
+     filmArray[4] = "Thor: Ragnarok";
+     filmArray[5] = "Doctor Strange";
+
+     // Perulangan
      System.out.println("Daftar film bioskop");
-     Scanner sc = new Scanner(System.in);
-     String filmArray[] = {"Avenger : Endgame", "Spider-Man : Homecoming",
-             "Black Panther","Thor : Ragnarok", "Doctor Strange"};
-
-     int noFilm = sc.nextInt();
-     System.out.println("Nomor Urut Film " + noFilm);
-     System.out.println("Masukkan nama film " + noFilm + " : " + filmArray[noFilm-1]);
-*/
-
-
-     String filmArray[] = {"Avenger : Endgame", "Spider-Man : Homecoming",
-             "Black Panther","Thor : Ragnarok", "Doctor Strange"};
-
-     System.out.println("Daftar film bioskop");
-     int y = 0;
+     int y = 1; // Mencetak filmArray ke-1
      do {
          System.out.println("Masukkan nama film " + y + " : " + filmArray[y]);
          y++;
-     }while(filmArray.length >= y);
+     }while(y < filmArray.length);
 
      System.out.println("Film yang ingin ditonton : ");
-     int x = 0;
+     int x = 1; // Mencetak filmArray ke-1
      do {
          System.out.println(x + ". " + filmArray[x]);
          x++;
